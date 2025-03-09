@@ -7,7 +7,7 @@ using namespace std;
 int primes[20];
 
 // e[i] = 1 daca i este numar prim, e[i] = 0 altfel
-bool e[72];
+bool e[73];
 
 // L = numarul de numere prime pana in 72
 int L = 0;
@@ -35,7 +35,7 @@ int main() {
     dp[0] = 1;
 
     // pentru fiecare numar de la A la B
-    for (int i = A; i <= B; i++) {
+    for (long long i = A; i <= B; i++) {
         // now_mask = masca de biti care retine daca numarul i este divizibil cu un numar prim pana in 72
         int now_mask = 0;
         for (int j = 0; j < L; j++) 
