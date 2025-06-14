@@ -10,22 +10,18 @@ int main() {
         cin >> A[i];
     }
     
-    vector<int> dp(1 << n);
-    // Initializare dp
-    dp = A; // dp[mask][-1] = A[mask]
-     
     // Calculare suma pe fiecare submasca - Varianta eficienta ca timp de memorie
-    for (int i = 0; i < n; i++)
+    vector<int> F(1 << n);
+    F = A; 
+    for (int ind = 0; ind < n; ind++)
         for (int mask = 0; mask < (1 << n); mask++)
-            if (mask & (1 << i)) {
-                // dp[mask][i] += dp[mask ^ (1 << i)][i - 1]
-                dp[mask] += dp[mask ^ (1 << i)];
+            if (mask & (1 << ind)) {
+                F[mask] += F[mask ^ (1 << ind)];
             }
             
-
     // Afisare rezultat
     for (int mask = 0; mask < (1 << n); mask++) {
-        cout << "Suma pe submasca " << mask << ": " << dp[mask] << '\n';
+        cout << "Suma pe submasca " << mask << ": " << F[mask] << '\n';
     }
     return 0;
 }
