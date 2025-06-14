@@ -1,3 +1,6 @@
+/*
+    Autor: Ciobanu Dragoș
+*/
 #include <bits/stdc++.h>
 using namespace std;
  

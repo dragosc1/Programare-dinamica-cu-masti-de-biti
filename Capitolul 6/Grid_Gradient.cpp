@@ -1,3 +1,6 @@
+/*
+    Autor: Ciobanu Dragoș
+*/
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -36,7 +39,7 @@ int main() {
             }
         }
     }
-    
+
     int result = 0;
     for (int mask = 0; mask < (1 << m); mask++) {
         result = (result + dp[0][mask]) % MOD;

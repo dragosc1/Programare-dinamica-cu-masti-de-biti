@@ -1,4 +1,6 @@
-
+/*
+    Autor: Ciobanu Dragoș
+*/
 #include <bits/stdc++.h>
 #include <fstream>
 #include <cmath>
