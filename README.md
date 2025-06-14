@@ -1,2 +1,6 @@
-# Licenta-2025-probleme
-Codul problemelor abordate in lucrarea de licenta
+# Programare dinamică cu măști de biți
+
+Implementarea problemelor din cadrul tezei de licență
+
+**Ciobanu Dragoș**  
+Grupa 351, FMI, UNIBUC
